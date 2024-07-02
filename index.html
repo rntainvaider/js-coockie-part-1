@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <div style="text-align: center; font-size: 24px; font-weight: bold; margin: 20px;">
+            <p>Create new color</p>
+        </div>
+        <div class="form_input">
+            <form action="" class="form">
+                <label for="color">Color: <span class="test_inputs_one">Может содержать только буквы</span></label><br>
+                <input type="text" id="color"><br><br>
+                <label for="type">Type: <span class="test_inputs_two">Выберите систему цвета</span></label><br>
+                <select id="type" style="width: 260px; height: 27px;">
+                    <option value="">--Выберите систему цвета--</option>
+                    <option value="RGB">RGB</option>
+                    <option value="RGBA">RGBA</option>
+                    <option value="HEX">HEX</option>
+                </select><br><br>
+                <label for="code">Code: <span class="test_inputs_three"></span></label><br>
+                <input type="text" id="code"><br><br>
+            </form>
+                <button class="btn_save">Save</button>
+        </div>
+        <div style="text-align: center;">
+            <p style="font-size: 24px; font-weight: bold; margin: 20px;">All colors</p>
+        </div>
+        <div class="box_colors">
+            <div class="colors" style="background-color: yellowgreen;">
+                <div class="color">
+                    <span>YELLOWGREEN</span>
+                    <span>RGB</span>
+                    <span>154, 205, 50</span>
+                </div>
+            </div>
+            <div class="colors" style="background-color: darkcyan;">
+                <div class="color">
+                    <span>DARKCYAN</span>
+                    <span>RGBA</span>
+                    <span>0, 139, 139, 1</span>
+                </div>
+            </div>
+            <div class="colors" style="background-color: orange;">
+                <div class="color">
+                    <span>ORANGE</span>
+                    <span>HEX</span>
+                    <span>#ffa500</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
